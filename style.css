@@ -135,6 +135,7 @@
     vertical-align:text-bottom;
     border: 0px solid #3ecf95;
     float: right;
+    display: flex;
  }
 
  .navbar li {
