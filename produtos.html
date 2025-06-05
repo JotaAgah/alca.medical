@@ -1,41 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produtos - ALCA MEDICAL</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <meta name="author" content="Grupo ALCA MEDICAL">
+    <meta name="keywords" content="equipamentos hospitalares, produtos médicos, distribuidora de materiais hospitalares, tecnologia em saúde">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="content-languege" content="pt-br">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="refresh" content="300">
+
+    <!--CSS Bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--Javascript Bootstrap-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!--CSS Nativo-->
+    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" href="Icones/LogoAlcaMedical.png">
+    <title>Produtos - ALCA MEDICAL</title>
+
     <style>
-        body {
-            background-color: #f9f9f9;
-            font-family: Arial, sans-serif;
-        }
         .produtos {
             padding: 50px 0;
         }
+
         .produtos h2 {
             color: #007bff;
             margin-bottom: 30px;
         }
+
         .produto {
             background: #fff;
             border-radius: 12px;
             padding: 30px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
             margin-bottom: 40px;
         }
+
         .produto h3 {
             color: #333;
             margin-bottom: 15px;
         }
+
         .produto ul {
             list-style-type: disc;
             padding-left: 20px;
         }
+
         .produto p {
             margin-bottom: 10px;
         }
+
         .img-produto {
             width: 100%;
             max-width: 500px;
@@ -43,11 +62,40 @@
             display: block;
             margin: 0 auto 20px;
             border-radius: 12px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
         }
     </style>
 </head>
+
 <body>
+    <!-- Cabeçalho -->
+    <div class="cont_header">
+        <header class="simple_header">
+            <table>
+                <tr>
+                    <td>
+                        <a href="index.html" class="link_header">
+                            <img class="icon_image" width="100" height="100" src="Icones/LogoAlcaMedical.png" alt="Logo ALCA Medical">
+                        </a>
+                        &nbsp;&nbsp;
+                    </td>
+                    <nav>
+                        <td>
+                            <ul class="navbar">
+                                <li><a href="index.html" class="link_header"><span class="ts-1">Home</span></a></li>
+                                <li><a href="quemsomos.html" class="link_header"><span class="ts-1">Quem Somos</span></a></li>
+                                <li><a href="destaques.html" class="link_header"><span class="ts-1">Destaques</span></a></li>
+                                <li><a href="faleconosco.html" class="link_header"><span class="ts-1">Fale Conosco</span></a></li>
+                            </ul>
+                        </td>
+                    </nav>
+                </tr>
+            </table>
+        </header>
+    </div>
+    <!-- Fim do Cabeçalho -->
+
+    <!-- Conteúdo da Página -->
     <section class="produtos">
         <div class="container">
             <h2 class="text-center">Nossos Produtos</h2>
@@ -56,13 +104,13 @@
             <!-- Produto SAF -->
             <div class="produto">
                 <h3>SAF - Sistema de Aquecimento de Fluidos</h3>
-                <img src="imagens/saf.jpg" alt="Imagem do Sistema de Aquecimento de Fluidos (SAF)" class="img-produto">
+                <img src="imagens/saf.jpg" alt="Sistema de Aquecimento de Fluidos (SAF)" class="img-produto">
                 <p><strong>Descrição:</strong> Tecnologia de aquecimento e manutenção da temperatura de fluidos intravenosos, essencial para prevenção e tratamento da hipotermia no ambiente hospitalar e cirúrgico.</p>
                 <p><strong>Componentes:</strong></p>
                 <ul>
                     <li><strong>CASE:</strong> Acomoda, organiza e aquece os fluidos.</li>
-                    <li><strong>CMT (Console Microcontrolador de Temperatura):</strong> Controle preciso dos DTI.</li>
-                    <li><strong>DTI (Dispositivo Termorregulador de Infusão):</strong> Mantém fluidos a cerca de 40ºC, disponível nos tamanhos pequeno e grande.</li>
+                    <li><strong>CMT:</strong> Console Microcontrolador de Temperatura.</li>
+                    <li><strong>DTI:</strong> Dispositivo Termorregulador de Infusão (pequeno e grande).</li>
                 </ul>
                 <p><strong>Locais de Utilização:</strong> Centros Cirúrgicos, UTIs, Berçários, Internação, Recuperação e Unidades de Resgate.</p>
                 <p><strong>Benefícios:</strong></p>
@@ -89,19 +137,29 @@
                     <li>Monitoramento digital de pressão, fuga de ar e drenagem.</li>
                     <li>Redução do tempo de internação.</li>
                     <li>Facilita decisões clínicas precisas.</li>
-                    <li>Design leve, portátil e silencioso que permite deambulação precoce dos pacientes.</li>
-                    <li>Dados com histórico de 72 horas e exportação via USB.</li>
+                    <li>Design leve, portátil e silencioso.</li>
+                    <li>Histórico de 72 horas e exportação via USB.</li>
                     <li>Redução de resíduos com recipientes otimizados.</li>
                 </ul>
                 <p><strong>Componentes:</strong></p>
                 <ul>
                     <li>Recipientes descartáveis (300ml, 800ml e 2L).</li>
                     <li>Estação de carga e suporte de calha.</li>
-                    <li>Tubulação de lúmen duplo para evacuação e monitoramento contínuo.</li>
+                    <li>Tubulação de lúmen duplo para evacuação e monitoramento.</li>
                 </ul>
                 <p><strong>Fabricante:</strong> Medela AG - Suíça</p>
             </div>
         </div>
     </section>
+
+    <!-- Rodapé -->
+    <hr>
+    <div class="cont_footer">
+        <footer class="simple_footer text-center">
+            <span>&#169; ALCA MEDICAL - Equipamentos Hospitalares</span><br>
+            <span>2025. Todos os direitos reservados. Segurança e Privacidade.</span>
+        </footer>
+    </div>
 </body>
+
 </html>
