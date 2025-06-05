@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Produtos - ALCA MEDICAL</title>
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" type="image/png" href="Icones/LogoAlcaMedical.png">
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/png" href="Icones/LogoAlcaMedical.png" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
   <style>
     body {
-  background-color: #f1f1f1; /* cinza claro */
-}
+      background: url('imagens/fundo.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
 
     .produtos {
       padding: 50px 0;
@@ -22,28 +23,45 @@
     .produtos h2 {
       color: #007bff;
       margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .produtos-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .produtos-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
     }
 
     .produto {
-      background: #fff;
       border-radius: 12px;
       padding: 30px;
       box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-      margin-bottom: 40px;
     }
 
     .produto h3 {
-      color: #333;
+      color: #fff;
       margin-bottom: 15px;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .produto p,
+    .produto li,
+    .produto ul {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #fff;
     }
 
     .produto ul {
       list-style-type: disc;
       padding-left: 20px;
-    }
-
-    .produto p {
-      margin-bottom: 10px;
     }
 
     .img-produto {
@@ -56,25 +74,12 @@
       box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
     }
 
-    /* AUMENTO DA FONTE */
-    .produto p,
-    .produto li,
-    .produto ul {
-      font-size: 16px;
-      line-height: 1.6;
-
-      .produtos-container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.produtos-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-
+    .simple_footer {
+      background-color: #007bff;
+      color: white;
+      padding: 20px 10px;
+      text-align: center;
+      font-size: 14px;
     }
   </style>
 </head>
@@ -87,7 +92,7 @@
         <tr>
           <td>
             <a href="index.html" class="link_header">
-              <img class="icon_image" width="100" height="100" src="Icones/LogoAlcaMedical.png" alt="Logo ALCA Medical">
+              <img class="icon_image" width="100" height="100" src="Icones/LogoAlcaMedical.png" alt="Logo ALCA Medical" />
             </a>
             &nbsp;&nbsp;
           </td>
@@ -111,11 +116,10 @@
     <div class="produtos-container">
       <h2 class="text-center">Mais Produtos</h2>
       <div class="produtos-grid">
-
         <!-- Produto SAF -->
         <div class="produto">
           <h3>SAF - Sistema de Aquecimento de Fluidos</h3>
-          <img src="imagens/saf.jpg" alt="Sistema SAF" class="img-produto">
+          <img src="imagens/saf.jpg" alt="Sistema SAF" class="img-produto" />
           <p><strong>Descrição:</strong> Tecnologia de aquecimento e manutenção da temperatura de fluidos intravenosos, essencial para prevenção e tratamento da hipotermia no ambiente hospitalar e cirúrgico.</p>
           <p><strong>Componentes:</strong></p>
           <ul>
@@ -135,13 +139,13 @@
           <p><strong>Registro ANVISA:</strong> 8.07267.40005</p>
         </div>
 
-        <hr>
+        <hr />
 
         <!-- Produto Thopaz+ -->
         <div class="produto">
           <h3>Thopaz+ - Sistema de Drenagem Cardiotorácica Digital</h3>
-          <img src="imagens/thopaz1.jpg" alt="Thopaz+ sendo higienizado" class="img-produto">
-          <img src="imagens/thopaz2.jpg" alt="Thopaz+ em funcionamento com tubulações" class="img-produto">
+          <img src="imagens/thopaz1.jpg" alt="Thopaz+ sendo higienizado" class="img-produto" />
+          <img src="imagens/thopaz2.jpg" alt="Thopaz+ em funcionamento com tubulações" class="img-produto" />
           <p><strong>Descrição:</strong> Solução digital de drenagem torácica, com monitorização precisa e em tempo real da pressão intrapleural, fuga de ar e volume de fluidos.</p>
           <p><strong>Benefícios:</strong></p>
           <ul>
@@ -160,16 +164,15 @@
           </ul>
           <p><strong>Fabricante:</strong> Medela AG - Suíça</p>
         </div>
-
       </div>
     </div>
   </section>
 
   <!-- Rodapé -->
-  <hr>
+  <hr />
   <div class="cont_footer">
     <footer class="simple_footer text-center">
-      <span>&#169; ALCA MEDICAL - Equipamentos Hospitalares</span><br>
+      <span>&#169; ALCA MEDICAL - Equipamentos Hospitalares</span><br />
       <span>2025. Todos os direitos reservados. Segurança e Privacidade.</span>
     </footer>
   </div>
