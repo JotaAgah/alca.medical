@@ -649,3 +649,9 @@ form button {
     border-radius: 12px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.15);
 }
+
+.produtos-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
